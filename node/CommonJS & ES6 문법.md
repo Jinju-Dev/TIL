@@ -6,14 +6,14 @@
 ### __dirname 이란?
  - 현재 파일이 위치한 폴더의 절대경로를 알려주는 환경 변수
  - "__"는 자바스크립트에서 기본적으로 정의된 변수에 붙는다.
-```
+```javascript
 import path from 'path';
 const __dirname = path.dirname(__filename);
 ``` 
 
 ### __filename 이란?
  - 현재 파일명을 알려주는 환경 변수 
-```
+```javascript
 import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 ```
@@ -24,7 +24,7 @@ const __filename = fileURLToPath(import.meta.url);
 
 ## [ Common JS 문법 ] 
 #### 전체
-```
+```javascript
 // import
 const mdl = require('mdl.js');
 
@@ -32,7 +32,7 @@ const mdl = require('mdl.js');
 module.esports = {}
 ```
 #### 개별
-```
+```javascript
 // import
 exports.mdl1 = '';
 exports.mdl2 = {};
@@ -43,7 +43,7 @@ const {mdl1, mdl2, mdl3} = require('mdl.js');
 ```
 ## [ ES6 문법 ]
 #### 전체
-```
+```javascript
 // import
 import mdl from 'mdl.js';
 
@@ -51,7 +51,7 @@ import mdl from 'mdl.js';
 export default mdl;
 ```
 ### 개별
-```
+```javascript
 // import
 // 1. 
 export const mdl1 = '';
