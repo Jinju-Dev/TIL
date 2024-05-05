@@ -10,3 +10,7 @@
 ```npm install --save-dev nodemon```
   - 실행
 ``` nodemon '파일명'```
+
+### nodemon 설치 후 실행이 안될 때 
+1. powershell 관리자 모드로 실행
+2. ```Set-ExecutionPolicy Unrestricted``` 입력 후 ```y``` 입력
